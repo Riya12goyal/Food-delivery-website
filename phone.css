@@ -1,0 +1,60 @@
+#navbar{
+    flex-direction: column;
+}
+#navbar ul span{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#navbar ul span li{
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+#navbar ul span li a{
+    font-size: 18px;
+ }
+ #logo img{
+    margin-left: 0px;
+ }
+section#home::before{
+    height: 130%;
+}
+h1.h-primary {
+    font-size: 50px;
+    margin: 10px;
+}
+h2.h-secondary {
+    font-size: 30px;
+    margin: 10px;
+}
+#services{ 
+    grid-template-areas: 
+    'one one one'
+    'two two two'
+    'three three three';
+} 
+#one{
+    grid-area: one;
+}
+#two{
+    grid-area: two;
+}
+#three{
+    grid-area: three;
+}
+#clients{
+    flex-wrap: wrap;
+}
+#client img{
+    height: 70px;
+    margin: 25px;
+}
+
+#contact-box input{
+    width:80%;
+}
+#contact-box textarea{
+    width:80%;
+}

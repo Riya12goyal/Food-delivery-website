@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food delivery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href= "phone.css">
+    <style>
+        
+    #navbar{
+        display: flex;
+        align-items: center;
+        z-index: -2; 
+        
+    }
+    #logo img{
+        display: flex;
+        margin-left: 80px;
+        width:70px;
+        height: 70px;
+        border-radius: 100%;
+        background-color:black;
+    }
+    #navbar ul span{
+        display: flex;
+    }
+    #navbar ul span li{
+        font-weight:800;
+        list-style: none;
+        margin-left: 50px;
+        border-radius: 50%;
+    }
+    #navbar ul span li a{
+       text-decoration:  none;
+       color: black;
+       font-size: 20px;
+       border-radius: 20px;
+       cursor: pointer;
+    }
+    #navbar ul span li a:hover{
+        color: gray;
+        border-radius: 60%;
+        background-color: light black;}
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    :root{
+        --navbar-height: 80px;
+    }
+    #home::before{
+        content: "";
+        background: url('f.jpg') no-repeat center center/cover;
+        z-index: -2;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        opacity: 0.4;
+    }
+    #home{
+        display: flex;
+        height: 486px;
+        flex-direction: column;
+        padding: 10px 200px;
+        justify-content: center;
+        align-items: center;
+    }
+    .h-primary{
+        font-size: 80px;
+        padding: 12px;  
+        color:black;
+        text-align: center;
+    }
+    .btn{
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 10px;
+        margin-top: 17px;
+        padding: 2px 20px;
+        border: 2px solid black;
+        background-color: yellow; }
+
+    .h-secondary{
+        margin-top: 15px;
+        font-size: 50px;
+        padding: 12px; 
+    text-align: center; }
+
+    .service{ display:flex;}
+   
+    #services{ margin: 34px;
+        margin-bottom: 0px;
+         display: grid;
+         grid-template-columns: repeat(3,auto);
+        justify-content: center;} 
+
+    #services .box{
+     border: 2px solid; 
+    padding: 20px;
+    border-radius: 8%;
+    
+    background-color: rgba(255, 217, 0, 0.16);
+margin-top: 0px;
+    margin: 15px;   }
+    #services .box img{ 
+        height: 150px;
+    display: block;
+margin: auto;}
+    .center{
+        text-align: center;;
+    }
+    #client{
+        margin-bottom: 50px ;
+    }
+    #clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #client img{
+        height: 144px;
+        margin: 25px;
+    }
+    #contact{
+        position: relative;
+    }
+    #contact::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        z-index: -1;
+        position: absolute;
+        background: url('contact.jpeg') no-repeat center center/cover;
+    }
+
+    footer{
+        background: black;
+        color: white;
+        padding: 9px 20px;
+    }
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+    }
+    #contact-box input{
+        width:100%;
+        padding: 0.5rem;
+    }
+    #contact-box textarea{
+        width:100%;
+        padding: 0.5rem;
+        border-radius: 9%;
+
+    }
+
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div id = "logo">
+            <img src = "logo.avif" alt="mywebsite@cooking.com">
+
+        </div>
+ <ul>
+    <span>
+        <li class="item"><a href = "#">Home</a></li>
+    <li class="item"><a href = "#">Services</a></li>
+    <li class="item"><a href = "#">About Us</a></li>
+    <li class="item"><a href = "#">Contact us</a></li>
+    </span>
+ </ul>
+
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to zwiggy</h1>
+        <p> <h2 class = "h-secondary"> Your hunger partner!  </h2></p>  
+      <button class="btn">Order Now</button>
+    </section>
+    <section class="services">
+        <h2 class = "h-secondary">
+            <br>
+            <br>
+            <br>
+            Our Services
+        </h2>
+        <div id="services">
+            <div class="box" id = "one">
+                <img src="img/burg.png" alt=" ">
+                <h2 class = "h-secondary">Food Ordering</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil in illo alias sequi facilis nulla sint odit voluptates, rerum corporis hic debitis harum, porro perferendis quia, tenetur labore atque dolorum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum obcaecati ipsam quasi molestias alias architecto voluptas nam error ab neque, laborum accusantium in.</p>
+            </div>
+            <div class="box" id = "two">
+                <img src="img/del.webp" alt=" ">
+                <h2 class = "h-secondary">Food Catering</h2>
+              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ducimus officiis quas, aperiam at mollitia tempore sunt molestiae reprehenderit obcaecati laudantium est aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae architecto sit iure exercitationem porro. Quia fugiat minus fugit qui quod inventore soluta itaque.
+              </p>
+            </div>
+            <div class="box" id = "three">
+                <img src="img/hh.webp" alt=" ">
+                <h2 class = "h-secondary">Bulk Ordering</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tempore dolores pariatur officia? Eveniet in veniam animi mollitia earum quas. Expedita, aliquid debitis!lorem23
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="client">
+        <h1 class="h-secondary">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item"> <img src="img/ap.png" alt="Apple">  </div>
+            <div class="client-item"> <img src="img/sky.png" alt="Skype">  </div>
+            <div class="client-item"> <img src="img/micro.png" alt="Microsoft">  </div>
+            <div class="client-item"> <img src="img/hp.png" alt="Hp">  </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class = "h-secondary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class = "form-group">
+                    <label for="Name"> Name: </label>
+                    <input type="text" name = "name" id = "name" placeholder="Enter your name">
+                </div>
+                <div class = "form-group">
+                    <label for="Name"> E-mail: </label>
+                    <input type="email" name = "email" id = "email" placeholder="Enter your email">
+                </div>
+                <div class = "form-group">
+                    <label for="Name"> Contact Number: </label>
+                    <input type="phone" name = "phone" id = "phone" placeholder="Enter your phone number">
+                </div>
+                <div class = "form-group">
+                    <label for="Name"> Message: </label>
+                    <textarea name ="Message" id = "messgae" cols="30" rows = "10"></textarea>           </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy; mywebsite@cooking.com. All rights reserved
+        </div>
+    </footer>
+</body>
+</html>
